@@ -1,3 +1,5 @@
+import ImageUpload from "./ImageUpload";
+import Input from "./Input";
 function Return() {
    
     const list_return = {
@@ -10,14 +12,17 @@ function Return() {
     
     return (
         <div>
-            <a>データベース上のデータ</a>
+            <h1>データベース上のデータ</h1>
             <ul>
                 <li>氏名：{list_return.name}</li>
                 <li>郵便番号：{list_return.postcode}</li>
                 <li>住所：{list_return.address}</li>
                 <li>状態：{list_return.status}</li>
             </ul>
-        </div>
+    < ImageUpload /> 
+    < Input />
+       </div>
+   
     )
 }
 
